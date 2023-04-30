@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CYR Studios | Hakkımızda</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">CYR Studios</a>
+            </div>
+            <input type="checkbox" id="menu-icon">
+            <label for="menu-icon" class="menu-icon">&#9776;</label>
+            <ul class="nav-items">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="products.html">Ürünler</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Cyr Studios</h1>
+            <p class="kayan-yazi">Discord Bot Alt Yapıları & Web Sitesi Hizmeti & Grafik Tasarım</p>
+        </div>
+    </header>
+    <!-- About Us -->
+    <section class="about-us">
+        <div class="about-us-container">
+            <h2>Hakkımızda</h2>
+            <p>Discord Bot Tasarımı, Web Sitesi Hizmeti ve Grafik Tasarımı alanında müşterilerimize kolaylık sağlıyoruz.
+                Discord bot tasarımı konusunda önceden 60'dan fazla satışımız bulunmaktadır. Web sitesi hizmeti
+                konusunda ise henüz satış gerçekleştirmedik ancak grafik tasarımı konusunda partner bir şirketimiz
+                bulunmaktadır ve 100'e yakın referansımız mevcuttur.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Telif Hakkı © 2023 Cyr Studios. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script>
+        let kayanYazi = document.querySelector(".kayan-yazi");
+        let yazi = kayanYazi.textContent;
+
+        kayanYazi.innerHTML = "";
+
+        let index = 0;
+        setInterval(() => {
+            kayanYazi.innerHTML += yazi[index];
+            index++;
+            if (index === yazi.length) {
+                index = 0;
+                kayanYazi.innerHTML = "";
+            }
+        }, 200);
+    </script>
+</body>
+
+</html>

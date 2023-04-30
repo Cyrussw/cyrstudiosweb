@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cyr Studios</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">CYR Studios</a>
+            </div>
+            <input type="checkbox" id="menu-icon">
+            <label for="menu-icon" class="menu-icon">&#9776;</label>
+            <ul class="nav-items">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="products.html">Ürünler</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Cyr Studios</h1>
+            <p class="kayan-yazi">Discord Bot Alt Yapıları & Web Sitesi Hizmeti & Grafik Tasarım</p>
+        </div>
+    </header>
+    <!-- Products -->
+    <section class="products">
+        <div class="product-container">
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Product Image">
+                <h3>Discord Bot</h3>
+                <p>Sunucunuz için en iyi discord botları.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Product Image">
+                <h3>Web Sitesi</h3>
+                <p>Şirketiniz için web sitesi hizmeti.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300x200" alt="Product Image">
+                <h3>Grafik Tasarım</h3>
+                <p>Hızlıca tasarlanan logolar ve bannerlar.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Telif Hakkı © 2023 Cyr Studios. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script>
+        let kayanYazi = document.querySelector(".kayan-yazi");
+        let yazi = kayanYazi.textContent;
+
+        kayanYazi.innerHTML = "";
+
+        let index = 0;
+        setInterval(() => {
+            kayanYazi.innerHTML += yazi[index];
+            index++;
+            if (index === yazi.length) {
+                index = 0;
+                kayanYazi.innerHTML = "";
+            }
+        }, 200);
+    </script>
+
+</body>
+
+</html>
