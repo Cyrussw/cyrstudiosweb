@@ -4,10 +4,10 @@ CYR Studios şirketimiz kullanıcının en iyi deneyimi en iyi optimize edilmiş
 
 ## İçerikler
 
-**Ana Sayfa:** Navbar, Banner, En Çok Satan 3 Ürün ve Footer
-**Hakkımızda:** Navbar, Banner, Hakkımızda Yazısı ve Footer
-**Ürünler:** Navbar, Banner, Ürünler ve Footer
-**İletişim:** Navbar, Banner, İletişim Kartları ve Footer
+* **Ana Sayfa:** Navbar, Banner, En Çok Satan 3 Ürün ve Footer
+* **Hakkımızda:** Navbar, Banner, Hakkımızda Yazısı ve Footer
+* **Ürünler:** Navbar, Banner, Ürünler ve Footer
+* **İletişim:** Navbar, Banner, İletişim Kartları ve Footer
 
 ## Kurulum
 
